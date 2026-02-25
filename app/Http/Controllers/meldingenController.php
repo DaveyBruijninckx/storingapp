@@ -11,7 +11,7 @@ echo $attractie . " / " . $capaciteit . " / " . $melder;
 require_once '../../../config/conn.php';
 
 //2. Query
-
+$query = "INSERT INTO melding (attractie, type) VALUES(:attractie, ;type)";
 //3. Prepare
 
 //4. Execute
