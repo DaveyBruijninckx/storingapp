@@ -12,25 +12,43 @@
     <?php require_once __DIR__.'/../components/header.php'; ?>
 
     <div class="container">
+        <?php
+            if(isset($_GET['msg'])){
+                echo $_GET['msg'];
+            }
+        ?>
         <h1>Nieuwe melding</h1>
 
         <form action="<?php echo $base_url; ?>/app/Http/Controllers/meldingenController.php" method="POST">
 
             <div class="form-group">
                 <label for="attractie">Naam attractie:</label>
-                <input type="text" name="attractie" id="attractie" class="form-input">
+                <input type="text" name="attractie" id="attractie" class="form-input" required>
             </div>
             <div class="form-group">
                 <label for="type">Type</label>
-                <!-- hier komt een dropdown -->
+                <select name="type" id="type" required>
+                    <option value="">Kies een optie!</option>
+                    <option value="Elektrisch">Elektrisch</option>
+                    <option value="Mechanisch">Mechanisch</option>
+                    <option value="Software">Software</option>
+                </select>               
             </div>
             <div class="form-group">
                 <label for="capaciteit">Capaciteit p/uur:</label>
-                <input type="number" min="0" name="capaciteit" id="capaciteit" class="form-input">
+                <input type="number" min="0" name="capaciteit" id="capaciteit" class="form-input" required>
             </div>
             <div class="form-group">
                 <label for="melder">Naam melder:</label>
-                <input type="text" name="melder" id="melder" class="form-input">
+                <input type="text" name="melder" id="melder" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="prioriteit">Prioriteit:</label>
+                <input type="checkbox" name="prioriteit" id="prioriteit" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="overigeInfo">Overige info:</label>
+                <input type="text" name="overigeInfo" id="overigeInfo" class="form-input">
             </div>
 
             <input type="submit" value="Verstuur melding">
