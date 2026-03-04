@@ -25,5 +25,4 @@ $statement->execute([
     ":overige_info" => $overige_info,
 ]);
 
-$msg = "Het formulier is verstuurd!";
-header("location: ../../../resources/views/meldingen/create.php");
+header("location: ../../../resources/views/meldingen/index.php");

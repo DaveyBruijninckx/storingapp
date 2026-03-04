@@ -12,11 +12,6 @@
     <?php require_once __DIR__.'/../components/header.php'; ?>
 
     <div class="container">
-        <?php
-            if(isset($_GET['msg'])){
-                echo $_GET['msg'];
-            }
-        ?>
         <h1>Nieuwe melding</h1>
 
         <form action="<?php echo $base_url; ?>/app/Http/Controllers/meldingenController.php" method="POST">
