@@ -24,16 +24,31 @@
         ?>
 
         <div style="height: 300px; background: #ededed; display: flex; justify-content: center; align-items: center; color: #666666;">
-            <?php foreach($list as $item):?>
-            <div>
-                <p><?php echo $item['attractie'];?></p>
-                <p><?php echo $item['capaciteit'];?></p>
-                <p><?php echo $item['melder'];?></p>
-                <p><?php echo $item['type'];?></p>
-                <p><?php echo $item['prioriteit'];?></p>
-                <p><?php echo $item['overige_info'];?></p>  
-            </div>
-            <?php endforeach; ?>
+            <table class="meldingen-tabel">
+                <thead>
+                    <tr>
+                        <th>Attractie</th>
+                        <th>Capaciteit</th>
+                        <th>Melder</th>
+                        <th>Type</th>
+                        <th>Prioriteit</th>
+                        <th>Overige info</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <?php foreach($list as $item): ?>
+                    <tr>
+                        <td><?php echo $item['attractie']; ?></td>
+                        <td><?php echo $item['capaciteit']; ?></td>
+                        <td><?php echo $item['melder']; ?></td>
+                        <td><?php echo $item['type']; ?></td>
+                        <td><?php echo $item['prioriteit']; ?></td>
+                        <td><?php echo $item['overige_info']; ?></td>
+                    </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
         </div>
     </div>
 
