@@ -8,7 +8,7 @@
 </head>
 
 <body>
-
+    
     <?php require_once __DIR__.'/../components/header.php'; ?>
 
     <div class="container">
@@ -51,7 +51,5 @@
             </table>
         </div>
     </div>
-
 </body>
-
 </html>
