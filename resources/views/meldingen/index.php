@@ -33,6 +33,7 @@
                         <th>Type</th>
                         <th>Prioriteit</th>
                         <th>Overige info</th>
+                        <th>Aanpassen</th>
                     </tr>
                 </thead>
 
@@ -45,6 +46,7 @@
                         <td><?php echo $item['type']; ?></td>
                         <td><?php echo $item['prioriteit']; ?></td>
                         <td><?php echo $item['overige_info']; ?></td>
+                        <td><?php echo "<a href='detail.php?id={$item['id']}'>" ?></td>
                     </tr>
                     <?php endforeach; ?>
                 </tbody>
