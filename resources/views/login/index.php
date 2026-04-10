@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <title>StoringApp</title>
+    <?php require_once '../components/head.php'; ?>
+</head>
+
+<body>
+
+    <?php require_once '../components/header.php'; ?>
+
+    <div class="container home">
+        <form action="../../../app/Http/Controllers" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <input type="submit" value="login">
+        </form>
+    </div>
+
+</body>
+
+</html>
