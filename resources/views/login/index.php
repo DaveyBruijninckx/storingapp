@@ -11,7 +11,7 @@
     <?php require_once '../components/header.php'; ?>
 
     <div class="container home">
-        <form action="../../../app/Http/Controllers" method="POST">
+        <form action="../../../app/Http/Controllers/loginController.php" method="POST">
             <div class="form-group">
                 <label for="username">Username:</label>
                 <input type="text" name="username" id="username">
