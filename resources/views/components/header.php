@@ -9,6 +9,7 @@
         </nav>
         <div>
             <a href="<?php echo $base_url; ?>/resources/views/login/index.php">Inloggen</a>
+            <a href="<?php echo $base_url; ?>/resources/views/login/loguit.php">Loguit</a>
         </div>
     </div>
 </header>
